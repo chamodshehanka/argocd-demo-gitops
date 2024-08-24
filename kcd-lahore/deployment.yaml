@@ -13,7 +13,7 @@ spec:
         app: kcd-lahore-2024
     spec:
       containers:
-      - image: nginx:latest
+      - image: ghcr.io/chamodshehanka/fossasia-summit-2023:latest
         name: kcd-lahore-2024
         ports:
         - containerPort: 8080
