@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kcd-lahore-2024
+  namespace: default
+spec:
+  template:
+    metadata:
+      labels:
+        app: kcd-lahore-2024
+    spec:
+      containers:
+      - image: ghcr.io/chamodshehanka/argocd-demo:latest
+        name: kcd-lahore-2024
+        ports:
+        - containerPort: 8080
+          name: http1
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 512Mi
+        startupProbe:
+          failureThreshold: 1
+          periodSeconds: 240
+          tcpSocket:
+            port: 8080
+    replicas: 1
+    selector:
+      matchLabels:
+        app: kcd-lahore-2024
