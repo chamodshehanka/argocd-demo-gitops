@@ -13,7 +13,7 @@ spec:
         app: kcd-lahore-2024
     spec:
       containers:
-      - image: ghcr.io/chamodshehanka/fossasia-summit-2023:latest
+      - image: ghcr.io/chamodshehanka/argocd-demo@sha256:75285fb21dae7567aa8a5885def913dee4db2930a8b01b500e0067d11cb632ec
         name: kcd-lahore-2024
         ports:
         - containerPort: 8080
