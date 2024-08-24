@@ -4,6 +4,9 @@ metadata:
   name: kcd-lahore-2024
   namespace: default
 spec:
+  selector:
+    matchLabels:
+      app: kcd-lahore-2024
   template:
     metadata:
       labels:
