@@ -13,7 +13,7 @@ spec:
         app: kcd-lahore-2024
     spec:
       containers:
-      - image: ghcr.io/chamodshehanka/argocd-demo@sha256:75285fb21dae7567aa8a5885def913dee4db2930a8b01b500e0067d11cb632ec
+      - image: ghcr.io/chamodshehanka/argocd-demo:3d786f2bcbd89b8b898ab16b5d67d5748a74d731
         name: kcd-lahore-2024
         ports:
         - containerPort: 8080
